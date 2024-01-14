@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { Butto } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import RegisterModal from '../shared/RegisterModal';
 
 

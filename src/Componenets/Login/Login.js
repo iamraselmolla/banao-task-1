@@ -2,10 +2,6 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-
-
-
-
     return (
         <div className="container py-5">
             <div className="register-user pb-2 px-4 pt-4">
@@ -32,7 +28,6 @@ const Login = () => {
                                         </p>
                                     </div>
                                 </form>
-
                                 <p className="fw-bolder">
                                     Forget Password? <Link className='text-decoration-none text-success' to="/forget-password">reset!</Link>
                                 </p>

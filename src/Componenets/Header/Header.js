@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { Button, Modal } from 'react-bootstrap';
+import { Butto } from 'react-bootstrap';
 import RegisterModal from '../shared/RegisterModal';
 
 
 const Header = () => {
-    const [modalShow, setModalShow] = useState(false);
-
-
-    return (
+    const [modalShow, setModalShow] = useState(false); return (
         <header className='container py-4'>
             <div className="d-md-flex d-none d-sm-none justify-content-between">
                 <div>
                     <Link to="/"><img src="img/logo.png" alt="" /></Link>
                 </div>
-
                 <form className='d-none d-sm-none d-md-none d-lg-block'>
 
                     <div className='d-flex align-items-center rounded-5 px-3 border'>
@@ -28,17 +24,10 @@ const Header = () => {
                     </Button>
                 </div>
             </div>
-
             <RegisterModal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
             />
-
-
-
-
-
-
         </header>
     );
 };
